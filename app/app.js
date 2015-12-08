@@ -1,12 +1,12 @@
-var app = angular.module('HolidayComebackApp', ['ngRoute']);
+var app = angular.module('HolidayComebackApp', ['ngRoute', 'ComebackCtrls']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when('/', {
 		templateUrl: "/views/index.html",
-		controller: ""
+		controller: "ComebackCtrl"
 	}).when('/:id', {
 		templateUrl: "/views/show.html",
-		controller: ""
+		controller: "ComebackCtrl"
 	});
 
 	$locationProvider.html5Mode(true);
