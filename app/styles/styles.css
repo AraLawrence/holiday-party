@@ -1,0 +1,85 @@
+body { 
+  background: url('http://www.photocase.com/stock-photos/294113-stock-photo-christmas-advent-green-red-winter-fashion-design.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	text-align: center;
+}
+
+.header {
+	background-color: #5D985A;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 68px;
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sub-header {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #C9FAC9;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);	
+}
+
+.search-items {
+	width: 600px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0 auto;
+	background-color: #FAA9BE;
+}
+
+.for {
+	font-size: 36px;
+}
+
+.well {
+	background-color: #C9FAC9;
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);	
+}
+
+.search-items {
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.green {
+	background-color: green;
+}
+
+.list-view, .content-view {
+	margin-top: 25px;
+}
+
+.list-view.ng-hide-add {
+	animation: bounceOutLeft 1s;
+}
+
+.list-view.ng-hide-remove {
+	animation: bounceInUp 1s;
+}
+
+.content-view.ng-hide-add {
+	animation: bounceOutLeft 1s;
+}
+
+.content-view.ng-hide-remove {
+	animation: bounceInUp 1s;
+}
+
+.search.ng-hide-remove {
+	animation: fadeIn 750ms;
+}

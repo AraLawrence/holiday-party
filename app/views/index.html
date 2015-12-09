@@ -1,5 +1,22 @@
-<h1>Main Page</h1>
-<h3 ng-model="type">{{ type }}</h3>
-<input ng-model="search" ng-model-options="{debounce: 800}">
-<a class="btn btn-primary" ng-click="setType('comeback')">Comeback</a>
-<a class="btn btn-primary" ng-click="setType('affirmation')">Affrimation</a>
+<h1 class="header">Holiday Helper</h1>
+<div class="row sub-header">
+  <h2 class="col-md-6 col-md-offset-3">Holiday parties are hard. Do you need a comeback or an affrimation?</h2>
+</div>
+<div class="search-items">
+	<h4><input class="search" ng-model="search" ng-model-options="{debounce: 800}" ng-show="type"></h4>
+	<h5><a class="search btn btn-primary btn-sm" ng-click="clear()" ng-show="type">clear</a></h5>
+	<a class="btn btn-primary" ng-click="setType('comeback')" ng-class="cbbtn">Comeback</a>
+	<a class="btn btn-primary" ng-click="setType('affirmation')" ng-class="affbtn">Affrimation</a>
+	<div class="row search" ng-model="type" ng-show="type">
+	  <p class="for">for:</p>
+	</div>
+</div>
+
+<div class="well list-view" ng-repeat="(key, value) in data" ng-show="listState">
+	<h3><a ng-click="getContent( key )">{{ value }}</a></h3>
+</div>
+
+<div class="view content-view well" ng-model="content" ng-show="contentState">
+	<h3>{{ content.comment }}</h3>
+	<a class="btn btn-primary" ng-click="resetState()">Go Back</a>
+</div>

@@ -1,4 +1,4 @@
-var app = angular.module('HolidayComebackApp', ['ngRoute', 'ComebackCtrls']);
+var app = angular.module('HolidayComebackApp', ['ngRoute', 'ComebackCtrls', 'ComebackServices']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when('/', {
