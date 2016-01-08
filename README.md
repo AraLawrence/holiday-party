@@ -1,6 +1,7 @@
 # Holiday Helper
 
-Holiday helper is an app that I created for a General Assembly hackathon. I intended it to be a generator of either comebacks or affirmations for offensive things said at holiday parties like: 
+Holiday helper is an app that I created for a General Assembly hackathon, where it one most unique, and 2nd place for best functionality. I intended it to be a generator of either comebacks or affirmations for offensive things said at holiday parties, like:
+
 ![](http://i.imgur.com/pBoQpsF.jpg)
 
 And then:
